@@ -6,9 +6,9 @@ DevKit is a small workflow layer for AI-assisted software development. It coordi
 
 ## Active Version
 
-DevKit v0.4 is active.
+DevKit v0.5 is active.
 
-DevKit v0.4 adds open-source readiness, usage documentation, and dogfood reports. Do not implement Cavekit integration, parallel build orchestration, plugin marketplace behavior, always-on Caveman-style output, or executable install automation until the user explicitly approves that work.
+DevKit v0.5 adds install/use guidance, a lightweight installer, examples, and release notes. Do not implement Cavekit integration, parallel build orchestration, plugin marketplace behavior, always-on Caveman-style output, or package-manager distribution until the user explicitly approves that work.
 
 ## Core Rules
 
@@ -63,6 +63,12 @@ For terse output:
 normal answer -> remove filler -> preserve technical detail -> return concise result
 ```
 
+For installation:
+
+```text
+inspect target -> dry-run when unsure -> copy or symlink -> verify installed skill files
+```
+
 ## Tool Preference
 
 - Use Spec Kit for requirement, clarification, plan, task, analysis, and implementation artifacts.
@@ -82,3 +88,5 @@ When changing code or artifacts, summarize what changed and how it was verified.
 Before non-trivial implementation or merge, check for artifact drift and uncovered acceptance criteria. Block only on gaps that affect correctness, behavior, security, data contracts, or testability.
 
 Terse mode must not drop constraints, risks, commands, file paths, verification results, or user decisions.
+
+Install workflows must not overwrite existing files unless the user explicitly passes `--force`.

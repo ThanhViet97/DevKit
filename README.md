@@ -12,7 +12,7 @@ It helps agents:
 
 DevKit is Markdown-first. It does not vendor Spec Kit, GitNexus, Cavekit, or Caveman source code.
 
-Current active version: v0.4.
+Current active version: v0.5.
 
 ## What Is Included
 
@@ -23,6 +23,8 @@ skills/        Thin workflow skills
 templates/     Reusable report and output templates
 specs/         Dogfood specs, plans, and tasks
 reports/       Dogfood artifact checks and gate reports
+scripts/       Lightweight installer
+examples/      Example workflow transcripts and artifacts
 ```
 
 ## Core Tools
@@ -40,6 +42,30 @@ reports/       Dogfood artifact checks and gate reports
 5. Use templates from `templates/` when checking artifacts or producing review output.
 
 See `docs/getting-started.md` for the full guide.
+
+## Install
+
+Preview install:
+
+```bash
+scripts/install.sh --dry-run
+```
+
+Install skills and docs to the default Codex locations:
+
+```bash
+scripts/install.sh
+```
+
+Install to custom locations:
+
+```bash
+scripts/install.sh \
+  --skills-target "$HOME/.codex/skills" \
+  --docs-target "$HOME/.codex/devkit"
+```
+
+See `docs/install.md` for options and update guidance.
 
 ## Version Summary
 
@@ -71,9 +97,16 @@ See `docs/getting-started.md` for the full guide.
 - Integration guidance
 - Dogfood reports
 
+### v0.5
+
+- Lightweight installer
+- Install and update docs
+- Workflow examples
+- Changelog and release prep
+
 ## Version Rule
 
-v0.4 is active. DevKit remains Markdown-first; executable install automation is not part of this version.
+v0.5 is active. DevKit remains Markdown-first; the installer only copies or symlinks existing Markdown artifacts.
 
 ## License
 
