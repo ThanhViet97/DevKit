@@ -1,0 +1,80 @@
+# DevKit
+
+DevKit is a small workflow kit for AI-assisted software development.
+
+It helps agents:
+
+- clarify requirements before coding
+- use specs, plans, and tasks as the source of truth
+- inspect existing code before brownfield changes
+- check artifact consistency before implementation or merge
+- keep output concise when terse mode is requested
+
+DevKit is Markdown-first. It does not vendor Spec Kit, GitNexus, Cavekit, or Caveman source code.
+
+Current active version: v0.4.
+
+## What Is Included
+
+```text
+AGENTS.md      Agent rules and active version boundary
+docs/          Usage, workflow, and version plans
+skills/        Thin workflow skills
+templates/     Reusable report and output templates
+specs/         Dogfood specs, plans, and tasks
+reports/       Dogfood artifact checks and gate reports
+```
+
+## Core Tools
+
+- Spec Kit: specification, clarification, planning, tasking, and implementation artifacts
+- GitNexus: codebase understanding, impact analysis, debugging, refactor safety, and review
+- DevKit: rules and workflow wrappers that decide when to use each tool
+
+## Quick Start
+
+1. Read `AGENTS.md`.
+2. Pick the workflow in `docs/workflows.md`.
+3. Use the relevant skill from `docs/skills.md`.
+4. Track decisions in `specs/`.
+5. Use templates from `templates/` when checking artifacts or producing review output.
+
+See `docs/getting-started.md` for the full guide.
+
+## Version Summary
+
+### v0.1
+
+- Base agent rules
+- Requirement gate
+- New feature, brownfield, debug, and review flows
+- First dogfood spec, plan, and tasks
+
+### v0.2
+
+- Artifact consistency checks
+- Acceptance coverage matrix
+- Review gate
+- Reconcile flow
+
+### v0.3
+
+- Optional terse output workflows
+- Terse review format
+- Commit message guidance
+- Context compression guidance
+
+### v0.4
+
+- Open-source hygiene files
+- Usage documentation
+- Integration guidance
+- Dogfood reports
+
+## Version Rule
+
+v0.4 is active. DevKit remains Markdown-first; executable install automation is not part of this version.
+
+## License
+
+MIT. See `LICENSE`.
