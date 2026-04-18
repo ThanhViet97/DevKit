@@ -12,7 +12,20 @@ AGENTS.md
 
 This file defines the active version, core rules, workflow order, and version boundaries.
 
-## 2. Choose A Workflow
+## 2. Choose An Agent Adapter
+
+Use `docs/agents.md` to pick the adapter for your coding agent:
+
+- Codex
+- Claude Code
+- Cursor
+- Gemini CLI
+- OpenCode
+- Cline
+
+Install the adapter into your target project when the agent uses project-local rules.
+
+## 3. Choose A Workflow
 
 Use `docs/workflows.md` to choose one:
 
@@ -24,13 +37,13 @@ Use `docs/workflows.md` to choose one:
 - Reconcile
 - Terse output
 
-## 3. Pick The Skill
+## 4. Pick The Skill
 
 Use `docs/skills.md` to pick the relevant skill.
 
 Skills are thin workflow wrappers. They tell an agent when to ask questions, when to inspect code, when to check impact, and what output shape to use.
 
-## 4. Create Or Update Artifacts
+## 5. Create Or Update Artifacts
 
 For new work in your own project, create a spec under that project's `specs/` directory.
 
@@ -46,7 +59,7 @@ For existing work, update the smallest necessary artifact:
 - `plan.md` for architecture or contracts
 - `tasks.md` for implementation and verification work
 
-## 5. Check Before Coding
+## 6. Check Before Coding
 
 Before non-trivial implementation:
 
@@ -55,7 +68,7 @@ Before non-trivial implementation:
 - confirm acceptance criteria coverage
 - inspect brownfield code and impact when changing existing code
 
-## 6. Verify And Report
+## 7. Verify And Report
 
 After changes:
 

@@ -15,8 +15,8 @@ DevKit v0.2 adds lightweight quality gates around the v0.1 workflow. The goal is
 ## Non-Goals v0.2
 
 - Do not implement v0.3.
-- Do not add Caveman integration.
-- Do not add Cavekit integration.
+- Do not add Caveman-inspired terse mode integration.
+- Do not add unapproved external workflow integration.
 - Do not add automatic parallel build orchestration.
 - Do not add executable automation unless a later version explicitly needs it.
 

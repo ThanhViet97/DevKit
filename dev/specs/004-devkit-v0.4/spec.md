@@ -15,7 +15,7 @@ DevKit v0.4 makes the repository understandable and usable by another developer.
 ## Non-Goals
 
 - Do not add executable install automation.
-- Do not integrate Cavekit.
+- Do not integrate unapproved external workflow.
 - Do not add automatic parallel build orchestration.
 - Do not add plugin marketplace behavior.
 - Do not enable terse mode globally.
@@ -64,7 +64,7 @@ A maintainer reads dogfood reports to confirm that v0.4 artifacts are covered an
 - AC-007: A user can choose a skill from `docs/skills.md`.
 - AC-008: A user can understand Spec Kit and GitNexus roles from `docs/spec-kit-and-gitnexus.md`.
 - AC-009: v0.4 dogfood reports exist in `reports/`.
-- AC-010: No executable install automation, Cavekit integration, parallel build orchestration, plugin marketplace behavior, or global terse mode is added.
+- AC-010: No executable install automation, unapproved external workflow integration, parallel build orchestration, plugin marketplace behavior, or global terse mode is added.
 
 ## Assumptions
 

@@ -15,7 +15,7 @@ DevKit v0.4 makes the repository usable by another developer. It adds open-sourc
 ## Non-Goals v0.4
 
 - Do not add executable install automation.
-- Do not add Cavekit integration.
+- Do not add unapproved external workflow integration.
 - Do not add automatic parallel build orchestration.
 - Do not add plugin marketplace behavior.
 - Do not enable terse mode globally.

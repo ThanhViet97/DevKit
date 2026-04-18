@@ -15,7 +15,7 @@ DevKit v0.5 makes the public repo easier to use from another machine or project.
 ## Non-Goals v0.5
 
 - Do not add package-manager distribution.
-- Do not add Cavekit integration.
+- Do not add unapproved external workflow integration.
 - Do not add automatic parallel build orchestration.
 - Do not add plugin marketplace behavior.
 - Do not enable terse mode globally.

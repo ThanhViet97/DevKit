@@ -15,7 +15,7 @@ DevKit v0.5 makes the public repository easier to install, update, and apply in 
 ## Non-Goals
 
 - Do not add package-manager distribution.
-- Do not integrate Cavekit.
+- Do not integrate unapproved external workflow.
 - Do not add automatic parallel build orchestration.
 - Do not add plugin marketplace behavior.
 - Do not enable terse mode globally.
@@ -65,7 +65,7 @@ A user opens `examples/` and follows a representative new feature, brownfield ch
 - AC-005: `examples/` contains the four approved workflow examples.
 - AC-006: `CHANGELOG.md` documents v0.5.0.
 - AC-007: `AGENTS.md` and `README.md` state v0.5 is active.
-- AC-008: No package-manager distribution, Cavekit integration, parallel build orchestration, plugin marketplace behavior, or global terse mode is added.
+- AC-008: No package-manager distribution, unapproved external workflow integration, parallel build orchestration, plugin marketplace behavior, or global terse mode is added.
 
 ## Assumptions
 

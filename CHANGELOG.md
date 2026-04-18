@@ -2,6 +2,21 @@
 
 All notable changes to DevKit are documented here.
 
+## v0.6.0 - 2026-04-18
+
+### Added
+
+- Added agent adapters for Codex, Claude Code, Cursor, Gemini CLI, OpenCode, and Cline.
+- Added `docs/agents.md` and `adapters/` with per-agent installation notes and templates.
+- Added `--agent` and `--agent-target` installer options.
+- Added project adapter install support for `--agent all`.
+
+### Changed
+
+- Installer now requires an explicit `--agent` instead of assuming Codex.
+- Docs now present DevKit as an agent-neutral workflow kit.
+- Verification now covers multi-agent adapter installs and project adapter preflight behavior.
+
 ## v0.5.1 - 2026-04-18
 
 ### Fixed
@@ -32,7 +47,7 @@ All notable changes to DevKit are documented here.
 ### Notes
 
 - DevKit remains Markdown-first.
-- No package-manager distribution, Cavekit integration, parallel build orchestration, plugin marketplace behavior, or global terse mode was added.
+- No package-manager distribution, unapproved external integrations, parallel build orchestration, plugin marketplace behavior, or global terse mode was added.
 
 ## v0.4.0 - 2026-04-18
 

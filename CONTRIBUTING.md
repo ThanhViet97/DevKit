@@ -8,7 +8,8 @@ DevKit is intentionally small. Changes should make AI-assisted development clear
 
 - Keep workflows lightweight and practical.
 - Prefer Markdown guidance before executable automation.
-- Do not copy source from Spec Kit, GitNexus, Cavekit, or Caveman.
+- Do not copy source from upstream tools or external agents.
+- Keep Caveman-inspired terse behavior as custom DevKit guidance, not vendored source.
 - Keep external tools decoupled.
 - Preserve version boundaries in `AGENTS.md`.
 - Add or update development specs, plans, tasks, and reports when behavior changes.

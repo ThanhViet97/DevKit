@@ -38,5 +38,5 @@
 - [x] T019 List repo files and confirm v0.4 artifacts exist.
 - [x] T020 Confirm active version metadata is v0.4.
 - [x] T021 Confirm expected hygiene and docs files exist.
-- [x] T022 Confirm no executable install automation, Cavekit integration, parallel build orchestration, plugin marketplace behavior, or global terse mode was added.
+- [x] T022 Confirm no executable install automation, unapproved external workflow integration, parallel build orchestration, plugin marketplace behavior, or global terse mode was added.
 - [x] T023 Report v0.4 completion.

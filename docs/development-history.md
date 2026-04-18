@@ -36,5 +36,6 @@ Normal users can start with:
 - `README.md`
 - `docs/getting-started.md`
 - `docs/install.md`
+- `docs/agents.md`
 - `docs/workflows.md`
 - `docs/skills.md`

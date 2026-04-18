@@ -28,5 +28,5 @@
 
 - [x] T013 List repo files and confirm v0.2 artifacts exist.
 - [x] T014 Check all skill frontmatter.
-- [x] T015 Confirm no v0.3, Caveman, Cavekit, or parallel build implementation exists.
+- [x] T015 Confirm no v0.3, Caveman-inspired terse mode, unapproved external workflow, or parallel build implementation exists.
 - [x] T016 Report v0.2 completion and wait for user approval before v0.3.

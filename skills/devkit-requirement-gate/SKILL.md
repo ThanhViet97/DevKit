@@ -64,3 +64,24 @@ Need clarification:
 ```
 
 Keep questions short. Prefer 1-3 questions per round.
+
+## Terse Mode
+
+When the user has requested terse output or the session is using `devkit-terse-output`, use this shape instead:
+
+Pass:
+
+```text
+Gate: pass
+Assumptions: <any>
+Next: <next action>
+```
+
+Blocked:
+
+```text
+Gate: blocked
+Q:
+1. ...
+2. ...
+```

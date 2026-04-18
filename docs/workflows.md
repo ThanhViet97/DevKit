@@ -125,6 +125,8 @@ Relevant skills:
 
 Use only when requested or when a template expects compact output.
 
+This workflow is Caveman-inspired, but the style must stay professional and technical.
+
 ```text
 normal answer
 -> remove filler

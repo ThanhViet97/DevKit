@@ -15,9 +15,9 @@ DevKit v0.3 adds optional terse workflows for answers, reviews, commit messages,
 ## Non-Goals v0.3
 
 - Do not enable terse mode globally.
-- Do not use caveman-speak as the default style.
-- Do not copy Caveman source code.
-- Do not integrate Cavekit.
+- Do not use gimmick speech as the default style.
+- Do not copy Caveman-inspired terse mode source code.
+- Do not integrate unapproved external workflow.
 - Do not add automatic parallel build orchestration.
 - Do not add plugin marketplace behavior.
 

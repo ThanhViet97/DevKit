@@ -10,14 +10,15 @@ It helps agents:
 - check artifact consistency before implementation or merge
 - keep output concise when terse mode is requested
 
-DevKit is Markdown-first. It does not vendor Spec Kit, GitNexus, Cavekit, or Caveman source code.
+DevKit is Markdown-first. It includes Caveman-inspired terse workflows for token-efficient output, but does not vendor upstream tool or coding-agent source code.
 
-Current active version: v0.5.1.
+Current active version: v0.6.0.
 
 ## What Is Included
 
 ```text
 AGENTS.md      Agent rules and active version boundary
+adapters/      Tool-specific adapters for coding agents
 docs/          Usage and installation docs
 skills/        Thin workflow skills
 templates/     Reusable report and output templates
@@ -30,38 +31,66 @@ dev/           Development history for contributors
 
 - Spec Kit: specification, clarification, planning, tasking, and implementation artifacts
 - GitNexus: codebase understanding, impact analysis, debugging, refactor safety, and review
+- Caveman-inspired terse mode: token-efficient professional output and context compression when requested
 - DevKit: rules and workflow wrappers that decide when to use each tool
+
+## Supported Agents
+
+DevKit has adapters for:
+
+- Codex
+- Claude Code
+- Cursor
+- Gemini CLI
+- OpenCode
+- Cline
+
+See `docs/agents.md` for the adapter map.
 
 ## Quick Start
 
 1. Read `AGENTS.md`.
-2. Pick the workflow in `docs/workflows.md`.
-3. Use the relevant skill from `docs/skills.md`.
-4. Track project decisions in your repo's `specs/`.
-5. Use templates from `templates/` when checking artifacts or producing review output.
+2. Pick the target agent adapter in `docs/agents.md`.
+3. Pick the workflow in `docs/workflows.md`.
+4. Use the relevant skill from `docs/skills.md`.
+5. Track project decisions in your repo's `specs/`.
+6. Use templates from `templates/` when checking artifacts or producing review output.
 
 See `docs/getting-started.md` for the full guide.
 
 ## Install
 
-Preview install:
+Every install chooses an agent explicitly.
 
-```bash
-scripts/install.sh --dry-run
-```
-
-Install skills and docs to the default Codex locations:
-
-```bash
-scripts/install.sh
-```
-
-Install to custom locations:
+Preview a project adapter install:
 
 ```bash
 scripts/install.sh \
-  --skills-target "$HOME/.codex/skills" \
-  --docs-target "$HOME/.codex/devkit"
+  --agent cursor \
+  --agent-target /path/to/project \
+  --dry-run
+```
+
+Install all project adapters into another repo:
+
+```bash
+scripts/install.sh \
+  --agent all \
+  --agent-target /path/to/project
+```
+
+Install one project adapter:
+
+```bash
+scripts/install.sh \
+  --agent cursor \
+  --agent-target /path/to/project
+```
+
+Install Codex user skills and docs:
+
+```bash
+scripts/install.sh --agent codex
 ```
 
 See `docs/install.md` for options and update guidance.
@@ -113,9 +142,15 @@ See `docs/development-history.md` for how to read those artifacts.
 - Development artifacts moved under `dev/`
 - Verification script
 
+### v0.6
+
+- Agent-neutral installer entrypoint with explicit `--agent`
+- Adapters for Codex, Claude Code, Cursor, Gemini CLI, OpenCode, and Cline
+- Project adapter install via `--agent-target`
+
 ## Version Rule
 
-v0.5.1 is active. DevKit remains Markdown-first; the installer only copies or symlinks existing Markdown artifacts.
+v0.6.0 is active. DevKit remains Markdown-first; the installer only copies or symlinks existing Markdown artifacts.
 
 ## License
 

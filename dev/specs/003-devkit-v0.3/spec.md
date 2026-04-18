@@ -15,9 +15,9 @@ DevKit v0.3 adds optional terse workflows for concise answers, review findings, 
 ## Non-Goals
 
 - Do not enable terse mode globally.
-- Do not use caveman-speak as the default style.
-- Do not copy Caveman source code.
-- Do not integrate Cavekit.
+- Do not use gimmick speech as the default style.
+- Do not copy Caveman-inspired terse mode source code.
+- Do not integrate unapproved external workflow.
 - Do not add automatic parallel build orchestration.
 - Do not add plugin marketplace behavior.
 
@@ -48,8 +48,8 @@ A long session or repo memory needs compression. The agent produces a compact su
 - FR-005: DevKit MUST provide templates for terse review, commit message, and context compression.
 - FR-006: DevKit MUST update active version metadata to v0.3.
 - FR-007: DevKit MUST keep terse workflows optional.
-- FR-008: DevKit MUST not copy Caveman source code or enable caveman-speak by default.
-- FR-009: DevKit MUST keep Cavekit, parallel build orchestration, and plugin marketplace behavior out of v0.3.
+- FR-008: DevKit MUST not copy Caveman-inspired terse mode source code or enable gimmick speech by default.
+- FR-009: DevKit MUST keep unapproved external workflow, parallel build orchestration, and plugin marketplace behavior out of v0.3.
 
 ## Acceptance Criteria
 
@@ -58,7 +58,7 @@ A long session or repo memory needs compression. The agent produces a compact su
 - AC-003: The repo contains four v0.3 skills: terse output, terse review, commit message, and context compression.
 - AC-004: The repo contains three v0.3 templates: terse review, commit message, and context compression.
 - AC-005: Terse output rules explicitly preserve technical detail and decisions.
-- AC-006: No Cavekit, parallel build orchestration, plugin marketplace behavior, or copied Caveman source is added.
+- AC-006: No unapproved external workflow, parallel build orchestration, plugin marketplace behavior, or copied Caveman-inspired terse mode source is added.
 - AC-007: v0.3 tasks map acceptance criteria to verification steps.
 
 ## Assumptions
@@ -72,4 +72,4 @@ A long session or repo memory needs compression. The agent produces a compact su
 - List repo files and confirm v0.3 artifacts exist.
 - Check all skill frontmatter.
 - Confirm `AGENTS.md` and `README.md` name v0.3 as active.
-- Confirm no Cavekit, parallel build, plugin marketplace, or copied Caveman source implementation exists.
+- Confirm no unapproved external workflow, parallel build, plugin marketplace, or copied Caveman-inspired terse mode source implementation exists.

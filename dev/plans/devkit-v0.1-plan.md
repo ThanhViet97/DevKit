@@ -11,8 +11,8 @@ DevKit does not replace Spec Kit or GitNexus. DevKit provides rules, workflows, 
 - Spec Kit is the primary foundation for spec-driven development.
 - GitNexus is used for code understanding, impact analysis, debugging, refactoring, and review in brownfield codebases.
 - DevKit rules act as guardrails so agents do not start coding while requirements remain unclear.
-- Cavekit is reference material only and is not part of the v0.1 core.
-- Caveman is not integrated in v0.1. Keep it in the backlog for a future terse/professional output mode.
+- unapproved external workflow is reference material only and is not part of the v0.1 core.
+- Caveman-inspired terse mode is not integrated in v0.1. Keep it in the backlog for a future terse/professional output mode.
 
 ## Scope v0.1
 
@@ -26,10 +26,10 @@ DevKit v0.1 focuses only on practical development problems:
 
 ## Non-Goals v0.1
 
-- Do not fork or copy the core source of Spec Kit, GitNexus, Cavekit, or Caveman.
+- Do not fork or copy the core source of Spec Kit, GitNexus, unapproved external workflow, or Caveman-inspired terse mode.
 - Do not build a marketplace or complex plugin system.
 - Do not implement automatic parallel build orchestration.
-- Do not add Caveman mode by default.
+- Do not add Caveman-inspired terse mode by default.
 - Do not create a UI.
 - Do not over-engineer the rule system.
 
@@ -149,9 +149,9 @@ Not planned for v0.1:
 ```text
 skills/
   devkit-terse/
-  devkit-caveman/
+  devkit-terse-persona/
   devkit-parallel-build/
-  devkit-cavekit/
+  devkit-external-workflow/
 ```
 
 ## Tool Roles
@@ -180,7 +180,7 @@ Use for:
 - Refactor safety.
 - PR/diff review.
 
-### Cavekit
+### unapproved external workflow
 
 Reference only for now.
 
@@ -192,7 +192,7 @@ Ideas worth borrowing later:
 - Inspect/check flow after implementation.
 - Parallel work packets for independent tasks.
 
-### Caveman
+### Caveman-inspired terse mode
 
 Backlog only for now.
 
@@ -203,7 +203,7 @@ Possible v0.3 use:
 - Short commit messages.
 - Context/memory compression.
 
-Do not use caveman-speak as default DevKit style.
+Do not use gimmick speech as default DevKit style.
 
 ## Roadmap
 
@@ -224,7 +224,7 @@ Do not use caveman-speak as default DevKit style.
 
 ### v0.3
 
-- Add Caveman-lite optional mode.
+- Add terse-output optional mode.
 - Add terse review output.
 - Add terse commit message workflow.
 - Add context/memory compression workflow.

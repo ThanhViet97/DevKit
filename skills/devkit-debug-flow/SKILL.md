@@ -31,16 +31,15 @@ bug report
 -> update artifact if behavior changed
 ```
 
-## GitNexus Usage
+## Tool Requirements
 
 Use GitNexus debugging tools when available to trace execution flow and related symbols.
 
-If unavailable, use:
+If GitNexus is unavailable:
 
-- Failing command output
-- Focused search
-- Relevant tests
-- Local call flow inspection
+- Use failing command output, focused grep, and relevant tests.
+- Inspect execution path through local file reads.
+- See `docs/prerequisites.md` for setup guidance.
 
 ## Rules
 
@@ -58,3 +57,15 @@ Report:
 - Fix made
 - Verification performed
 - Remaining risk, if any
+
+## Terse Mode
+
+When the user has requested terse output or the session is using `devkit-terse-output`, use this shape instead:
+
+```text
+Failure: <what failed>
+Cause: <root cause>
+Fix: <what changed>
+Verified: <how verified>
+Risk: <residual risk or none>
+```

@@ -14,8 +14,8 @@ DevKit v0.2 extends v0.1 with lightweight quality gates for artifact consistency
 ## Non-Goals
 
 - Do not implement v0.3.
-- Do not integrate Caveman.
-- Do not integrate Cavekit.
+- Do not integrate Caveman-inspired terse mode.
+- Do not integrate unapproved external workflow.
 - Do not add automatic parallel build orchestration.
 - Do not build executable automation in v0.2.
 
@@ -45,7 +45,7 @@ Implementation, spec, plan, or tasks drift. The agent updates the smallest neces
 - FR-004: DevKit MUST provide a reconcile flow skill.
 - FR-005: DevKit MUST provide templates for artifact consistency checks, coverage matrices, and reconcile reports.
 - FR-006: DevKit MUST update active version metadata to v0.2.
-- FR-007: DevKit MUST keep v0.3, Caveman, Cavekit, and parallel build behavior out of v0.2.
+- FR-007: DevKit MUST keep v0.3, Caveman-inspired terse mode, unapproved external workflow, and parallel build behavior out of v0.2.
 - FR-008: DevKit MUST preserve all v0.1 rules and workflows unless explicitly superseded.
 
 ## Acceptance Criteria
@@ -54,7 +54,7 @@ Implementation, spec, plan, or tasks drift. The agent updates the smallest neces
 - AC-002: `AGENTS.md` states that v0.2 is active and v0.3 requires explicit approval.
 - AC-003: The repo contains four v0.2 skills: artifact check, coverage matrix, review gate, and reconcile flow.
 - AC-004: The repo contains three reusable templates: artifact consistency check, acceptance coverage matrix, and reconcile report.
-- AC-005: No v0.3, Caveman, Cavekit, or parallel build implementation is added.
+- AC-005: No v0.3, Caveman-inspired terse mode, unapproved external workflow, or parallel build implementation is added.
 - AC-006: v0.2 tasks map acceptance criteria to verification steps.
 
 ## Assumptions
@@ -68,4 +68,4 @@ Implementation, spec, plan, or tasks drift. The agent updates the smallest neces
 - List repo files and confirm v0.2 artifacts exist.
 - Check all v0.2 skills have frontmatter.
 - Confirm `AGENTS.md` and `README.md` name v0.2 as active.
-- Confirm no v0.3/Caveman/Cavekit implementation directories exist.
+- Confirm no v0.3/Caveman-inspired terse mode/unapproved external workflow implementation directories exist.

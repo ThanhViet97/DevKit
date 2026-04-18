@@ -2,7 +2,7 @@
 
 ## Original Context
 
-The team discussed DevKit v0.5. The goal is to add a lightweight installer, install docs, examples, changelog, and release prep. The installer should default to copy mode, support symlink mode, support dry-run, and refuse to overwrite existing files unless `--force` is passed. DevKit should stay Markdown-first and should not add Cavekit, parallel build orchestration, package-manager distribution, plugin marketplace behavior, or global terse mode.
+The team discussed DevKit v0.5. The goal is to add a lightweight installer, install docs, examples, changelog, and release prep. The installer should default to copy mode, support symlink mode, support dry-run, and refuse to overwrite existing files unless `--force` is passed. DevKit should stay Markdown-first and should not add unapproved external integrations, parallel build orchestration, package-manager distribution, plugin marketplace behavior, or global terse mode.
 
 ## Compressed Context
 
@@ -22,7 +22,7 @@ Decisions:
 Non-Goals:
 
 - No package-manager distribution.
-- No Cavekit integration.
+- No unapproved external integrations.
 - No automatic parallel build orchestration.
 - No plugin marketplace.
 - No global terse mode.

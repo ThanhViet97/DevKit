@@ -40,8 +40,8 @@ specs/001-devkit-v0.1/tasks.md
 - Keep v0.2 manual and template-driven.
 - Add gates as guidance, not hardcoded automation.
 - Block only material gaps that can affect correctness or delivery.
-- Keep v0.3 and Caveman out of scope.
-- Keep Cavekit as reference-only.
+- Keep v0.3 and Caveman-inspired terse mode out of scope.
+- Keep unapproved external workflow as reference-only.
 
 ## Acceptance Coverage
 
@@ -58,5 +58,5 @@ specs/001-devkit-v0.1/tasks.md
 
 - Run `rg --files`.
 - Run `rg -n "^(name|description):" skills`.
-- Search for v0.3/Caveman/Cavekit implementation paths.
+- Search for v0.3/Caveman-inspired terse mode/unapproved external workflow implementation paths.
 - Review `AGENTS.md` and `README.md` active version text.

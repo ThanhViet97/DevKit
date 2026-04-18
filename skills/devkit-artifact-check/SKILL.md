@@ -58,3 +58,14 @@ Advisory:
 Next actions:
 - ...
 ```
+
+## Terse Mode
+
+When the user has requested terse output or the session is using `devkit-terse-output`, use this shape instead:
+
+```text
+Check: pass | blocked | advisory
+Blockers: <item or none>
+Advisory: <item or none>
+Next: <action>
+```

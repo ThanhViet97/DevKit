@@ -25,7 +25,7 @@ DevKit skills are thin workflow wrappers. They do not duplicate Spec Kit, GitNex
 
 | Skill | Purpose |
 | --- | --- |
-| `devkit-terse-output` | Produce concise answers without losing technical substance |
+| `devkit-terse-output` | Produce Caveman-inspired token-efficient answers without losing technical substance |
 | `devkit-terse-review` | Produce compact review findings |
 | `devkit-commit-message` | Generate concise commit messages |
 | `devkit-context-compress` | Compress long context while preserving decisions and next actions |

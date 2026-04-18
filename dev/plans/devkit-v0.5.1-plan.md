@@ -15,7 +15,7 @@ DevKit v0.5.1 patches installer safety and cleans the public repository layout b
 ## Non-Goals
 
 - Do not add package-manager distribution.
-- Do not add Cavekit integration.
+- Do not add unapproved external workflow integration.
 - Do not add parallel build orchestration.
 - Do not add plugin marketplace behavior.
 

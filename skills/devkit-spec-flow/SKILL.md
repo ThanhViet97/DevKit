@@ -40,6 +40,16 @@ idea
 - Ensure acceptance criteria are testable.
 - After implementation, update artifacts if behavior changed.
 
+## Tool Requirements
+
+Requires Spec Kit for `/speckit.specify`, `/speckit.clarify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.analyze`.
+
+If Spec Kit is unavailable:
+
+- Use `templates/artifact-consistency-check.md` as a manual spec scaffold.
+- Document requirements, acceptance criteria, and assumptions directly in `specs/`.
+- See `docs/prerequisites.md` for setup guidance.
+
 ## Output
 
 Report:
@@ -49,3 +59,15 @@ Report:
 - Tasks path
 - Open assumptions
 - Verification steps
+
+## Terse Mode
+
+When the user has requested terse output or the session is using `devkit-terse-output`, use this shape instead:
+
+```text
+Spec: <path>
+Plan: <path>
+Tasks: <path>
+Open: <assumptions or none>
+Next: <next action>
+```

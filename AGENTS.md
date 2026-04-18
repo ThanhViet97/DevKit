@@ -6,9 +6,9 @@ DevKit is a small workflow layer for AI-assisted software development. It coordi
 
 ## Active Version
 
-DevKit v0.5.1 is active.
+DevKit v0.6.0 is active.
 
-DevKit v0.5.1 keeps the v0.5 install/use story and patches installer safety plus repository layout. Do not implement Cavekit integration, parallel build orchestration, plugin marketplace behavior, always-on Caveman-style output, or package-manager distribution until the user explicitly approves that work.
+DevKit v0.6.0 adds agent-neutral adapter support for Codex, Claude Code, Cursor, Gemini CLI, OpenCode, and Cline. Caveman-inspired terse workflows are allowed only as custom DevKit guidance for token-efficient output. Do not implement unapproved external integrations, parallel build orchestration, plugin marketplace behavior, global terse mode, package-manager distribution, or additional agent adapters until the user explicitly approves that work.
 
 ## Core Rules
 
@@ -66,16 +66,17 @@ normal answer -> remove filler -> preserve technical detail -> return concise re
 For installation:
 
 ```text
-inspect target -> dry-run when unsure -> copy or symlink -> verify installed skill files
+choose agent -> inspect target -> dry-run when unsure -> copy or symlink -> verify installed adapter and skill files
 ```
 
 ## Tool Preference
 
 - Use Spec Kit for requirement, clarification, plan, task, analysis, and implementation artifacts.
 - Use GitNexus for codebase context, execution flow exploration, impact analysis, debugging, refactor safety, and review.
-- Treat Cavekit as reference material only.
-- Use DevKit terse workflows only when requested or when an output format explicitly calls for concise text.
-- Do not use caveman-speak as the default style.
+- Use DevKit's Caveman-inspired terse workflows only when token-saving output is requested or when an output format explicitly calls for concise text.
+- Do not use caveman-speak or gimmick speech as the default style.
+- Treat Codex, Claude Code, Cursor, Gemini CLI, OpenCode, and Cline as adapter targets, not as DevKit's identity.
+- Keep adapter files thin; shared workflow logic belongs in `AGENTS.md`, `skills/`, `docs/`, and `templates/`.
 
 ## Output Discipline
 
@@ -89,4 +90,4 @@ Before non-trivial implementation or merge, check for artifact drift and uncover
 
 Terse mode must not drop constraints, risks, commands, file paths, verification results, or user decisions.
 
-Install workflows must not overwrite existing files unless the user explicitly passes `--force`.
+Install workflows must require an explicit `--agent` and must not overwrite existing files unless the user explicitly passes `--force`.

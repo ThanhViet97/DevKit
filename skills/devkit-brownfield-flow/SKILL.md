@@ -33,7 +33,7 @@ request
 -> update artifacts if behavior changed
 ```
 
-## GitNexus Usage
+## Tool Requirements
 
 Use GitNexus when available:
 
@@ -42,7 +42,11 @@ Use GitNexus when available:
 - `impact` for blast radius before editing
 - `detect_changes` after edits when risk is not local
 
-If GitNexus is unavailable, use local code search and focused file reads.
+If GitNexus is unavailable:
+
+- Use local grep, file reads, and call-site search to understand existing behavior.
+- Manually identify likely callers, contracts, and tests before editing.
+- See `docs/prerequisites.md` for setup guidance.
 
 ## Rules
 
@@ -61,3 +65,15 @@ Report:
 - Impact risks
 - Change made
 - Verification performed
+
+## Terse Mode
+
+When the user has requested terse output or the session is using `devkit-terse-output`, use this shape instead:
+
+```text
+Found: <current behavior>
+Affected: <files or modules>
+Risk: <impact risk>
+Changed: <what was edited>
+Verified: <how verified>
+```

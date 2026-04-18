@@ -59,3 +59,13 @@ DevKit should:
 - keep artifacts traceable
 - make missing requirements and verification gaps visible
 - preserve user decisions in specs and reports
+
+## Verify Tools Are Available
+
+Before starting a session, confirm that Spec Kit and GitNexus are reachable in your agent's MCP configuration.
+
+See `docs/prerequisites.md` for:
+
+- how to verify each tool
+- what to do if a tool is not available
+- fallback procedures for each skill

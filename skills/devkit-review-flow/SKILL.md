@@ -47,6 +47,15 @@ Findings first:
 - If no findings, say so and name residual risk or test gaps.
 - Keep style concise and actionable.
 
+## Tool Requirements
+
+Use GitNexus `impact` and `detect_changes` when available to assess blast radius before finalizing findings.
+
+If GitNexus is unavailable:
+
+- Use local diff, grep, and file reads to inspect risky paths.
+- See `docs/prerequisites.md` for setup guidance.
+
 ## Output
 
 Use this shape:
@@ -61,4 +70,19 @@ Open questions
 
 Notes
 - ...
+```
+
+## Terse Mode
+
+When the user has requested terse output, compact output, or PR comment format, use `devkit-terse-review` instead:
+
+```text
+P1 path/to/file:line - Problem. Impact. Fix.
+P2 path/to/file:line - Problem. Impact. Fix.
+```
+
+If no findings:
+
+```text
+No blocking findings. Residual risk: ...
 ```

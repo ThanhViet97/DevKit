@@ -34,7 +34,7 @@
 - [x] T018 Run `scripts/install.sh --help`.
 - [x] T019 Run `scripts/install.sh --dry-run --no-docs`.
 - [x] T020 Confirm expected docs, examples, changelog, and v0.5 artifacts exist.
-- [x] T021 Confirm no package-manager distribution, Cavekit integration, parallel build orchestration, plugin marketplace behavior, or global terse mode was added.
+- [x] T021 Confirm no package-manager distribution, unapproved external workflow integration, parallel build orchestration, plugin marketplace behavior, or global terse mode was added.
 - [x] T022 Commit and push v0.5.
 - [x] T023 Create and push tag `v0.5.0`.
 - [x] T024 Create GitHub release `v0.5.0`.

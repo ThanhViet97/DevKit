@@ -13,10 +13,10 @@ DevKit v0.1 provides a minimal workflow layer for AI-assisted coding. It defines
 
 ## Non-Goals
 
-- Do not fork or copy Spec Kit, GitNexus, Cavekit, or Caveman source code.
+- Do not fork or copy Spec Kit, GitNexus, unapproved external workflow, or Caveman-inspired terse mode source code.
 - Do not implement v0.2 or v0.3 behavior.
-- Do not add Caveman integration in v0.1.
-- Do not add Cavekit integration in v0.1.
+- Do not add Caveman-inspired terse mode integration in v0.1.
+- Do not add unapproved external workflow integration in v0.1.
 - Do not build marketplace, plugin, UI, or parallel build orchestration.
 
 ## User Scenarios
@@ -44,8 +44,8 @@ An agent reviews a diff with findings first, then calls out missing tests, behav
 - FR-003: DevKit MUST include skill skeletons for requirement gate, spec flow, brownfield flow, debug flow, and review flow.
 - FR-004: Each skill MUST state when to use it, workflow order, rules, and expected output.
 - FR-005: DevKit MUST state that v0.2 and v0.3 work requires explicit user approval.
-- FR-006: DevKit MUST keep Cavekit as reference-only in v0.1.
-- FR-007: DevKit MUST keep Caveman out of v0.1 implementation.
+- FR-006: DevKit MUST keep unapproved external workflow as reference-only in v0.1.
+- FR-007: DevKit MUST keep Caveman-inspired terse mode out of v0.1 implementation.
 - FR-008: DevKit MUST provide initial spec, plan, and tasks artifacts for its own v0.1 work.
 
 ## Acceptance Criteria
@@ -53,7 +53,7 @@ An agent reviews a diff with findings first, then calls out missing tests, behav
 - AC-001: A new agent can read `AGENTS.md` and know the active version, rules, and approval boundary.
 - AC-002: A developer can inspect `skills/` and find the five v0.1 workflow skills.
 - AC-003: A developer can read this spec and identify what v0.1 includes and excludes.
-- AC-004: No v0.2, v0.3, Caveman, or Cavekit implementation files are added in v0.1.
+- AC-004: No v0.2, v0.3, Caveman-inspired terse mode, or unapproved external workflow implementation files are added in v0.1.
 - AC-005: The repo contains enough artifact structure to continue work through specs, plans, and tasks.
 
 ## Assumptions
@@ -66,4 +66,4 @@ An agent reviews a diff with findings first, then calls out missing tests, behav
 - Check expected files exist.
 - Read skill frontmatter and confirm names/descriptions are present.
 - Confirm `AGENTS.md` blocks unapproved v0.2/v0.3 work.
-- Confirm no Caveman or Cavekit implementation directory exists.
+- Confirm no Caveman-inspired terse mode or unapproved external workflow implementation directory exists.

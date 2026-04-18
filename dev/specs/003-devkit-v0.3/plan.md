@@ -6,7 +6,7 @@
 - Runtime code: none in v0.3
 - Primary artifacts: Markdown rules, skills, templates, specs, and tasks
 - External tools: Spec Kit and GitNexus remain external
-- Caveman: used only as inspiration for optional terse workflows; source is not copied
+- Caveman-inspired terse mode: used only as inspiration for optional terse workflows; source is not copied
 
 ## Architecture
 
@@ -39,8 +39,8 @@ specs/002-devkit-v0.2/tasks.md
 ## Design Decisions
 
 - Keep terse workflows opt-in.
-- Use professional concise output, not caveman-speak.
-- Do not install or vendor Caveman.
+- Use professional concise output, not gimmick speech.
+- Do not install or vendor Caveman-inspired terse mode.
 - Keep all v0.3 behavior as Markdown guidance.
 - Preserve v0.1 and v0.2 workflows.
 
