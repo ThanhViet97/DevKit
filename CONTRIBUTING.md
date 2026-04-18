@@ -11,13 +11,13 @@ DevKit is intentionally small. Changes should make AI-assisted development clear
 - Do not copy source from Spec Kit, GitNexus, Cavekit, or Caveman.
 - Keep external tools decoupled.
 - Preserve version boundaries in `AGENTS.md`.
-- Add or update specs, plans, tasks, and reports when behavior changes.
+- Add or update development specs, plans, tasks, and reports when behavior changes.
 
 ## Change Workflow
 
 1. Read `AGENTS.md`.
 2. Identify the active version.
-3. Create or update the relevant spec in `specs/`.
+3. Create or update the relevant artifact under `dev/specs/`, `dev/plans/`, or `dev/reports/`.
 4. Update docs, skills, templates, or reports.
 5. Run a manual artifact check for non-trivial changes.
 6. Update the task checklist.

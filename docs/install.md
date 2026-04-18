@@ -49,6 +49,8 @@ scripts/install.sh --mode symlink
 
 The installer refuses to overwrite existing installed paths.
 
+It checks all destination paths before writing. If any conflict exists and `--force` is not provided, the install fails before copying or symlinking files.
+
 To replace existing DevKit files:
 
 ```bash
@@ -66,6 +68,26 @@ scripts/install.sh --dry-run --force
 ```bash
 scripts/install.sh --no-docs
 ```
+
+## Include Development History
+
+Development specs, plans, and dogfood reports live under `dev/`. They are not installed by default.
+
+To include them in the docs install:
+
+```bash
+scripts/install.sh --include-dev
+```
+
+## Verify The Installer
+
+Run the local verification script:
+
+```bash
+scripts/verify.sh
+```
+
+It checks syntax, help output, dry-run behavior, temp copy install, temp symlink install, conflict preflight, force replacement, include-dev install, and invalid mode handling.
 
 ## Update From Git
 

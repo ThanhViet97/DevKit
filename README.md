@@ -12,19 +12,18 @@ It helps agents:
 
 DevKit is Markdown-first. It does not vendor Spec Kit, GitNexus, Cavekit, or Caveman source code.
 
-Current active version: v0.5.
+Current active version: v0.5.1.
 
 ## What Is Included
 
 ```text
 AGENTS.md      Agent rules and active version boundary
-docs/          Usage, workflow, and version plans
+docs/          Usage and installation docs
 skills/        Thin workflow skills
 templates/     Reusable report and output templates
-specs/         Dogfood specs, plans, and tasks
-reports/       Dogfood artifact checks and gate reports
-scripts/       Lightweight installer
+scripts/       Lightweight installer and verifier
 examples/      Example workflow transcripts and artifacts
+dev/           Development history for contributors
 ```
 
 ## Core Tools
@@ -38,7 +37,7 @@ examples/      Example workflow transcripts and artifacts
 1. Read `AGENTS.md`.
 2. Pick the workflow in `docs/workflows.md`.
 3. Use the relevant skill from `docs/skills.md`.
-4. Track decisions in `specs/`.
+4. Track project decisions in your repo's `specs/`.
 5. Use templates from `templates/` when checking artifacts or producing review output.
 
 See `docs/getting-started.md` for the full guide.
@@ -66,6 +65,10 @@ scripts/install.sh \
 ```
 
 See `docs/install.md` for options and update guidance.
+
+Development artifacts for DevKit itself live in `dev/`. They are kept for contributors and traceability, but are not required for day-to-day use.
+
+See `docs/development-history.md` for how to read those artifacts.
 
 ## Version Summary
 
@@ -104,9 +107,15 @@ See `docs/install.md` for options and update guidance.
 - Workflow examples
 - Changelog and release prep
 
+### v0.5.1
+
+- Installer preflight safety fix
+- Development artifacts moved under `dev/`
+- Verification script
+
 ## Version Rule
 
-v0.5 is active. DevKit remains Markdown-first; the installer only copies or symlinks existing Markdown artifacts.
+v0.5.1 is active. DevKit remains Markdown-first; the installer only copies or symlinks existing Markdown artifacts.
 
 ## License
 

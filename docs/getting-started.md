@@ -32,10 +32,12 @@ Skills are thin workflow wrappers. They tell an agent when to ask questions, whe
 
 ## 4. Create Or Update Artifacts
 
-For new work, create a spec under:
+For new work in your own project, create a spec under that project's `specs/` directory.
+
+DevKit's own development artifacts live under:
 
 ```text
-specs/
+dev/
 ```
 
 For existing work, update the smallest necessary artifact:

@@ -2,6 +2,19 @@
 
 All notable changes to DevKit are documented here.
 
+## v0.5.1 - 2026-04-18
+
+### Fixed
+
+- Fixed installer partial-install behavior by adding a preflight conflict check before copying or symlinking files.
+
+### Changed
+
+- Moved development specs, plans, and dogfood reports under `dev/` so the root repo is cleaner for normal users.
+- Installer no longer installs development history by default.
+- Added `--include-dev` to install development artifacts when needed.
+- Added `scripts/verify.sh` for local installer verification.
+
 ## v0.5.0 - 2026-04-18
 
 ### Added

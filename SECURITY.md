@@ -24,4 +24,6 @@ Relevant issues include:
 
 ## Out Of Scope
 
-DevKit v0.4 has no runtime service and no executable install automation. Runtime vulnerabilities in external tools such as Spec Kit, GitNexus, Codex, or other agents should be reported to those projects.
+DevKit has no runtime service. v0.5 introduced a local shell installer, so installer safety issues are in scope for this repository.
+
+Runtime vulnerabilities in external tools such as Spec Kit, GitNexus, Codex, or other agents should be reported to those projects.

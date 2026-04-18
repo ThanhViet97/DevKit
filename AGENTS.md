@@ -6,9 +6,9 @@ DevKit is a small workflow layer for AI-assisted software development. It coordi
 
 ## Active Version
 
-DevKit v0.5 is active.
+DevKit v0.5.1 is active.
 
-DevKit v0.5 adds install/use guidance, a lightweight installer, examples, and release notes. Do not implement Cavekit integration, parallel build orchestration, plugin marketplace behavior, always-on Caveman-style output, or package-manager distribution until the user explicitly approves that work.
+DevKit v0.5.1 keeps the v0.5 install/use story and patches installer safety plus repository layout. Do not implement Cavekit integration, parallel build orchestration, plugin marketplace behavior, always-on Caveman-style output, or package-manager distribution until the user explicitly approves that work.
 
 ## Core Rules
 
